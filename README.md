@@ -8,3 +8,5 @@ A productivity app that helps to track time you spend on different projects.
 * App saves how much time user have spent on projects, so user can continue doing it later
 
 The web implementation of an Android app [Boosted](https://play.google.com/store/apps/details?id=com.boostedproductivity.app&hl=ru&gl=US)
+
+_Nikita Shepshuk, 853504_
