@@ -9,4 +9,4 @@ A productivity app that helps to track time you spend on different projects.
 
 The web implementation of an Android app [Boosted](https://play.google.com/store/apps/details?id=com.boostedproductivity.app&hl=ru&gl=US)
 
-Nikita Shepshuk, 853504
+_Nikita Shepshuk, 853504_
