@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intensio</title>
     <link rel="icon" href="res/logo.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sanchez&display=swap" rel="stylesheet">
+    <link href="styles/shared.css" rel="stylesheet">
+    <link href="styles/auth.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="landing-page">
     <header>
-        <a href="#">
+        <a class="landing-logotype" href="#">
             <img src="res/logo.svg" alt="">
-            <h1 class="logo">intensio</h1>
-            <span class="slogan">Master your time</span>
+            <div>
+                <h1>intensio</h1>
+                <span>Master your time</span>
+            </div>
         </a>
     </header>
     <main>
-        <span>Start using intensio</span>
+        <span class="login-form-title">Start using <span>intensio</span></span>
         <form method="post" class="login-form">
+
             <label hidden for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email">
+
             <label hidden for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Password">
+
             <label hidden for="password-confirm">Confirm password</label>
             <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirm password">
-            <button type="submit">Sign Up</button>
-            <button class="sign-in-button">I already have an account</button>
+
+            <button type="submit" class="sign-up-button">Sign Up</button>
+            <button>I already have an account</button>
+
         </form>
     </main>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.3.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border-style: solid;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    transition: all 0.15s;
+}
+
+input:focus {
+    outline: none;
+    border-color: black;
+}
+
+button {
+    display: inline-block;
+    padding: 0.7em;
+    border: none;
+    border-radius: 0.5em;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+button:hover {
+    background-color: #DFDFDF;
+}
+
+button:active {
+    outline: none;
+}
