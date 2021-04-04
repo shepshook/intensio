@@ -29,14 +29,12 @@
     color: black;
     margin: 1rem 0 0;
     font-size: 4rem;
-    flex: 2;
 }
 
 .landing-logotype span {
     color: #a1a1a1;
     letter-spacing: 0.15em;
     font-size: 1.5rem;
-    flex: 2;
 }
 
 .landing-page main {
