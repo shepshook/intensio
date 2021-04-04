@@ -1,0 +1,143 @@
+main {
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+header {
+    overflow: hidden;
+    background-color: #FAF6FF;
+    height: 3em;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header > div {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%
+}
+
+header > div > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header > div > a > img {
+    height: 1em;
+    width: auto;
+    margin: 0.2em 0.3em 0 0;
+}
+
+header > div > a > h2 {
+    font-family: 'Sanchez', serif !important;
+    color: black;
+    margin: 0;
+}
+
+section.archive > h1 {
+    margin: 1em 0 0 1em;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 1em 0.5em;
+}
+
+.project-card {
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    padding: 0.7em 1em;
+    background-color: #FAFAFA;
+    border: #DCDCDC solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+
+.project-card > div {
+    display: flex;
+    align-items: center;
+}
+
+.project-card > div:last-of-type {
+    margin-left: auto;
+}
+
+.project-card time {
+    margin-right: 0.7em;
+    font-size: 1.4em;
+}
+
+.project-card button {
+    font-size: inherit;
+    background: none;
+    outline: none;
+    padding: 0;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.project-card button img {
+    width: 3em;
+    height: 3em;
+}
+
+.project-card button:hover {
+    filter: brightness(1.2);
+}
+
+.project-card.current-project {
+    border: none;
+    background-color: #583881;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.project-card.current-project h1 {
+    font-size: 2em;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.project-card.current-project button:hover {
+    filter: brightness(0.95)
+}
+
+span.color-dot {
+    background-color: aquamarine;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.7em;
+}
+
+button.new-project-button {
+    display: flex;
+    background: none;
+    outline: none;
+    margin: auto;
+    align-items: center;
+    font-size: 1.5em;
+    color: #909090;
+}
+
+button.new-project-button * {
+    margin: 0 0.4em;
+}
+
+button.new-project-button:hover {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}

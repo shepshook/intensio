@@ -3,56 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intensio</title>
     <link rel="icon" href="res/logo.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Sanchez&display=swap"
+        rel="stylesheet">
+    <link href="styles/shared.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="#">
-            <img src="res/logo.svg" alt="">
-            <h3 class="logo">intensio</h3>
-        </a>
+        <div class="container">
+            <a href="#">
+                <img src="res/logo.svg" alt="">
+                <h2 class="logo">intensio</h2>
+            </a>
+        </div>
     </header>
-    <main>
-        <section class="current-project">
+    <main class="container">
+        <section class="project-card current-project">
             <h1>Now tracking</h1>
             <div>
                 <span class="color-dot"></span>
                 <h2>Project name</h2>
-                <span class="time">00:45:00</span>
+            </div>
+            <div>
+                <time>00:45:00</time>
                 <button><img src="res/stop.svg" alt="Stop"></button>
             </div>
         </section>
-        <button class="new-project"><img src="res/plus.svg" alt="">Add new project</button>
+        <button class="new-project-button"><img src="res/plus.svg" alt="">Add new project</button>
         <section class="archive">
             <h1>Today</h1>
-            <div>
-                <span class="color-dot"></span>
-                <h2>Project name</h2>
-                <span class="time">00:45:00</span>
-                <button><img src="res/start.svg" alt="Start"></button>
+            <div class="project-card">
+                <div>
+                    <span class="color-dot"></span>
+                    <h2>Project name</h2>
+                </div>
+                <div>
+                    <time>00:45:00</time>
+                    <button><img src="res/start.svg" alt="Start"></button>
+                </div>
             </div>
         </section>
         <section class="archive">
             <h1>Yesterday</h1>
-            <div>
-                <span class="color-dot"></span>
-                <p>Project name</p>
-                <p class="time">00:45:00</p>
-                <button><img src="res/start.svg" alt="Start"></button>
+            <div class="project-card">
+                <div>
+                    <span class="color-dot"></span>
+                    <h2>Project name</h2>
+                </div>
+                <div>
+                    <time>00:45:00</time>
+                    <button><img src="res/start.svg" alt="Start"></button>
+                </div>
             </div>
-            <div>
-                <span class="color-dot"></span>
-                <p>Project name</p>
-                <p class="time">00:45:00</p>
-                <button><img src="res/start.svg" alt="Start"></button>
+            <div class="project-card">
+                <div>
+                    <span class="color-dot"></span>
+                    <h2>Project name</h2>
+                </div>
+                <div>
+                    <time>00:45:00</time>
+                    <button><img src="res/start.svg" alt="Start"></button>
+                </div>
             </div>
-            <div>
-                <span class="color-dot"></span>
-                <p>Project name</p>
-                <p class="time">00:45:00</p>
-                <button><img src="res/start.svg" alt="Start"></button>
+            <div class="project-card">
+                <div>
+                    <span class="color-dot"></span>
+                    <h2>Project name</h2>
+                </div>
+                <div>
+                    <time>00:45:00</time>
+                    <button><img src="res/start.svg" alt="Start"></button>
+                </div>
             </div>
         </section>
     </main>
