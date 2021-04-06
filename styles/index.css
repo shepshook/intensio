@@ -110,3 +110,71 @@ button.new-project-button * {
 button.new-project-button:hover, button.new-project-button:focus {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
+
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-project-modal {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 1.5em;
+    width: 30em; 
+}
+
+.new-project-modal > .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em;
+}
+
+button.close > img {
+    height: 1em;
+    width: auto;
+}
+
+.new-project-modal > .body {
+    padding: 1em;
+}
+
+.new-project-modal .form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.new-project-modal > .body label {
+    margin: auto 0 auto auto;
+}
+
+.new-project-modal .color-input {
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+button.save-button {
+    color: white;
+    background-color: #583881;
+    padding-right: 2em;
+    padding-left: 2em;  
+    display: flex;
+    margin: 0 auto;
+}
+
+button.save-button:hover {
+    background-color: #482e69;
+}
