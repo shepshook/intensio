@@ -1,6 +1,8 @@
 # intensio
 A productivity app that helps to track time you spend on different projects.
 
+Link to deployed app: https://intensio0.web.app/
+
 ### Features
 * Authorization
 * User can create projects and then start tracking time for them
