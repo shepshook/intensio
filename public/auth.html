@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intensio</title>
+    <link rel="icon" href="res/logo.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Sanchez&display=swap"
+    rel="stylesheet">
+    <link href="styles/shared.css" rel="stylesheet">
+    <link href="styles/auth.css" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script> -->
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAjtismB2O3Av2huDYMbWvnCF5sPzBtJH8",
+            authDomain: "intensio0.firebaseapp.com",
+            projectId: "intensio0",
+            storageBucket: "intensio0.appspot.com",
+            databaseURL: "https://intensio0-default-rtdb.europe-west1.firebasedatabase.app/",
+            messagingSenderId: "206782710783",
+            appId: "1:206782710783:web:42f9e2e6b924ae5ece5dca"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="auth.js" defer></script>
+</head>
+
+<body class="landing-page">
+    <header>
+        <a class="landing-logotype" href="index.html">
+            <img src="res/logo.svg" alt="">
+            <div>
+                <h1>intensio</h1>
+                <span>Master your time</span>
+            </div>
+        </a>
+    </header>
+    <main>
+        <span class="login-form-title">Start using <span>intensio</span></span>
+        <form id="signUpForm" method="post" class="login-form">
+
+            <label hidden for="email">Email</label>
+            <input class="text-input" type="email" id="emailSignUp" name="email" placeholder="Email">
+
+            <label hidden for="password">Password</label>
+            <input class="text-input" type="password" id="passwordSignUp" name="password" placeholder="Password">
+
+            <label hidden for="password-confirm">Confirm password</label>
+            <input class="text-input" type="password" id="passwordConfirm" name="passwordConfirm"
+                placeholder="Confirm password">
+
+            <button id="signUpButton" type="submit" class="sign-up-button">Sign Up</button>
+            <button id="switchToSignInButton" type="button">I already have an account</button>
+
+        </form>
+
+        <form id="signInForm" method="post" class="login-form" hidden>
+            <label hidden for="email">Email</label>
+            <input class="text-input" type="email" id="emailSignIn" name="email" placeholder="Email">
+
+            <label hidden for="password">Password</label>
+            <input class="text-input" type="password" id="passwordSignIn" name="password" placeholder="Password">
+            
+            <button id="signInButton" type="submit" class="sign-up-button">Sign In</button>
+            <button id="switchToSignUpButton" type="button">Go back to registration</button>
+        </form>
+    </main>
+</body>
+
+</html>

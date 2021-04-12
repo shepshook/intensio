@@ -11,9 +11,28 @@
         rel="stylesheet">
     <link href="styles/shared.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAjtismB2O3Av2huDYMbWvnCF5sPzBtJH8",
+            authDomain: "intensio0.firebaseapp.com",
+            projectId: "intensio0",
+            databaseURL: "https://intensio0-default-rtdb.europe-west1.firebasedatabase.app/",
+            storageBucket: "intensio0.appspot.com",
+            messagingSenderId: "206782710783",
+            appId: "1:206782710783:web:42f9e2e6b924ae5ece5dca"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./index.js" type="module"></script>
 </head>
 
-<body>
+<body hidden>
     <div id="mainContent">
         <header class="header">
             <div class="container">
@@ -21,8 +40,7 @@
                     <img src="res/logo.svg" alt="">
                     <span>intensio</span>
                 </a>
-                <!-- <href> is placed here temporarily, will be changed with js auth logics -->
-                <a class="logout" href="auth.html">
+                <a id="logoutButton" class="logout">
                     <img src="res/logout.svg" alt="Log Out">
                 </a>
             </div>
@@ -38,7 +56,7 @@
                 </div>
                 <div>
                     <time>00:45:00</time>
-                    <button><img src="res/stop.svg" alt="Stop"></button>
+                    <button></button>
                 </div>
             </section>
             <button id="newProjectButton" class="new-project-button"><img src="res/plus.svg" alt="">Add new
@@ -54,7 +72,7 @@
                     </div>
                     <div>
                         <time>00:45:00</time>
-                        <button><img src="res/start.svg" alt="Start"></button>
+                        <button></button>
                     </div>
                 </div>
             </section>
@@ -69,7 +87,7 @@
                     </div>
                     <div>
                         <time>00:45:00</time>
-                        <button><img src="res/start.svg" alt="Start"></button>
+                        <button></button>
                     </div>
                 </div>
                 <div class="project-card">
@@ -81,7 +99,7 @@
                     </div>
                     <div>
                         <time>00:45:00</time>
-                        <button><img src="res/start.svg" alt="Start"></button>
+                        <button></button>
                     </div>
                 </div>
                 <div class="project-card">
@@ -93,7 +111,7 @@
                     </div>
                     <div>
                         <time>00:45:00</time>
-                        <button><img src="res/start.svg" alt="Start"></button>
+                        <button></button>
                     </div>
                 </div>
             </section>
@@ -108,7 +126,7 @@
                 <button id="closeModalButton" class="close"><img src="res/close.svg" alt="Close"></button>
             </div>
             <hr>
-            <form method="POST" class="body">
+            <form method="POST" class="body" id="newProjectForm">
                 <div class="form-inputs">
                     <label for="name">Project Name</label>
                     <input class="text-input" type="text" id="name" name="name" placeholder="Name">
@@ -123,28 +141,7 @@
 
 </body>
 <script>
-    let modal = document.getElementById("newProjectModal");
-    let mainContent = document.getElementById("mainContent");
-    let openModalButton = document.getElementById("newProjectButton");
-    let closeButton = document.getElementById("closeModalButton");
-
-    openModalButton.onclick = function () {
-        modal.style.display = "flex";
-        mainContent.style.filter = "blur(5px)";
-    }
-
-    function closeModal() {
-        modal.style.display = "none";
-        mainContent.style.filter = "none";
-    }
-
-    closeButton.onclick = closeModal;
     
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            closeModal();
-        }
-    }
 </script>
 
 </html>
