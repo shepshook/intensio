@@ -2,6 +2,10 @@ section.archive > h1 {
     margin: 1em 0 0 1em;
 }
 
+main > div.container {
+    flex-direction: column;
+}
+
 .project-card {
     font-size: 0.8rem;
     border-radius: 1.5rem;

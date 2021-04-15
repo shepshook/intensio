@@ -11,6 +11,8 @@
         rel="stylesheet">
     <link href="styles/shared.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/auth.css" rel="stylesheet">
+    <link href="styles/details.css" rel="stylesheet">
 
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
@@ -29,116 +31,25 @@
         };
         firebase.initializeApp(firebaseConfig);
     </script>
-    <script src="./index.js" type="module"></script>
+
+    <script src="./app.js" type="module"></script>
 </head>
 
-<body hidden>
-    <div id="mainContent">
-        <header class="header">
-            <div class="container">
-                <a href="#" class="logotype">
-                    <img src="res/logo.svg" alt="">
-                    <span>intensio</span>
-                </a>
-                <a id="logoutButton" class="logout">
-                    <img src="res/logout.svg" alt="Log Out">
-                </a>
-            </div>
-        </header>
-        <main class="container">
-            <section class="project-card current-project">
-                <h1>Now tracking</h1>
-                <div>
-                    <span class="color-dot"></span>
-                    <a href="details.html">
-                        <h2>Project name</h2>
-                    </a>
-                </div>
-                <div>
-                    <time>00:45:00</time>
-                    <button></button>
-                </div>
-            </section>
-            <button id="newProjectButton" class="new-project-button"><img src="res/plus.svg" alt="">Add new
-                project</button>
-            <section class="archive">
-                <h1>Today</h1>
-                <div class="project-card">
-                    <div>
-                        <span class="color-dot"></span>
-                        <a href="details.html">
-                            <h2>Project name</h2>
-                        </a>
-                    </div>
-                    <div>
-                        <time>00:45:00</time>
-                        <button></button>
-                    </div>
-                </div>
-            </section>
-            <section class="archive">
-                <h1>Yesterday</h1>
-                <div class="project-card">
-                    <div>
-                        <span class="color-dot"></span>
-                        <a href="details.html">
-                            <h2>Project name</h2>
-                        </a>
-                    </div>
-                    <div>
-                        <time>00:45:00</time>
-                        <button></button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div>
-                        <span class="color-dot"></span>
-                        <a href="details.html">
-                            <h2>Project name</h2>
-                        </a>
-                    </div>
-                    <div>
-                        <time>00:45:00</time>
-                        <button></button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div>
-                        <span class="color-dot"></span>
-                        <a href="details.html">
-                            <h2>Project name</h2>
-                        </a>
-                    </div>
-                    <div>
-                        <time>00:45:00</time>
-                        <button></button>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <div id="newProjectModal" class="modal-container">
-
-        <div class="new-project-modal">
-            <div class="header">
-                <h1>Add new project</h1>
-                <button id="closeModalButton" class="close"><img src="res/close.svg" alt="Close"></button>
-            </div>
-            <hr>
-            <form method="POST" class="body" id="newProjectForm">
-                <div class="form-inputs">
-                    <label for="name">Project Name</label>
-                    <input class="text-input" type="text" id="name" name="name" placeholder="Name">
-                    <label for="color">Accent Color</label>
-                    <input class="color-input" type="color" id="color" name="color" value="#88FFAA">
-                </div>
-                <button type="submit" class="save-button">Save</button>
-            </form>
+<body>
+    <header id="mainHeader" class="header">
+        <div class="container">
+            <a href="/" class="logotype" data-link>
+                <img src="res/logo.svg" alt="">
+                <span>intensio</span>
+            </a>
+            <a id="logoutButton" class="logout" onclick="javasript:firebase.auth().signOut()">
+                <img src="res/logout.svg" alt="Log Out">
+            </a>
         </div>
+    </header>
 
-    </div>
-
+    <main></main>
+    
 </body>
 <script>
     

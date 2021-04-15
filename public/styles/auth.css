@@ -37,7 +37,7 @@
     font-size: 1.5rem;
 }
 
-.landing-page main {
+.landing-page > div {
     display: flex;
     flex-direction: column;
     justify-content: center;

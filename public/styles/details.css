@@ -1,6 +1,6 @@
 .project-details {
-    background: radial-gradient(50% 200px at top, rgba(127, 255, 212, 0.25), transparent);
     max-width: 500px;
+    flex-direction: column;
     display: flex;
     margin: 0 auto;
     padding: 0 1em;
