@@ -80,13 +80,13 @@ export default class extends AbstractView {
                     <span class="login-form-title">Start using <span>intensio</span></span>
                     <form id="signUpForm" method="post" class="login-form">
 
-                        <label hidden for="email">Email</label>
+                        <label class="d-none" for="email">Email</label>
                         <input class="text-input" type="email" id="emailSignUp" name="email" placeholder="Email">
 
-                        <label hidden for="password">Password</label>
+                        <label class="d-none" for="password">Password</label>
                         <input class="text-input" type="password" id="passwordSignUp" name="password" placeholder="Password">
 
-                        <label hidden for="password-confirm">Confirm password</label>
+                        <label class="d-none" for="password-confirm">Confirm password</label>
                         <input class="text-input" type="password" id="passwordConfirm" name="passwordConfirm"
                             placeholder="Confirm password">
 
@@ -96,10 +96,10 @@ export default class extends AbstractView {
                     </form>
 
                     <form id="signInForm" method="post" class="login-form" hidden>
-                        <label hidden for="email">Email</label>
+                        <label class="d-none" for="email">Email</label>
                         <input class="text-input" type="email" id="emailSignIn" name="email" placeholder="Email">
 
-                        <label hidden for="password">Password</label>
+                        <label class="d-none" for="password">Password</label>
                         <input class="text-input" type="password" id="passwordSignIn" name="password" placeholder="Password">
                         
                         <button id="signInButton" type="submit" class="sign-up-button">Sign In</button>
