@@ -85,6 +85,10 @@ header.header .logout:hover {
     filter: drop-shadow(0 0 3px #583881)
 }
 
+.d-none {
+    display: none;
+}
+
 button {
     display: inline-block;
     padding: 0.7em;
