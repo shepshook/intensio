@@ -1,6 +1,6 @@
-import AbstractView from "./AbstractView.js";
-import { startNewProjectRecord, finishLastProjectRecord } from "../data/Repository.js";
-import { formatRecordsTime } from "../helpers.js";
+import AbstractView from "/views/AbstractView.js";
+import { startNewProjectRecord, finishLastProjectRecord } from "/data/Repository.js";
+import { formatRecordsTime } from "/helpers.js";
 
 export default class extends AbstractView {
     constructor(params) {

@@ -1,7 +1,7 @@
-import AbstractView from "./AbstractView.js";
-import ProjectCard from "./ProjectCard.js";
-import { getProjectsByUserId, addProject } from "../data/Repository.js"
-import { getFormData } from "../helpers.js";
+import AbstractView from "/views//AbstractView.js";
+import ProjectCard from "/views/ProjectCard.js";
+import { getProjectsByUserId, addProject } from "/data/Repository.js"
+import { getFormData } from "/helpers.js";
 
 export default class extends AbstractView {
     constructor(params) {

@@ -1,4 +1,4 @@
-import { UserId } from "../app.js";
+import { UserId } from "/app.js";
 
 const database = firebase.database();
 

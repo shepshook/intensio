@@ -1,5 +1,5 @@
-import AbstractView from "./AbstractView.js";
-import { getFormData } from "../helpers.js";
+import AbstractView from "/views/AbstractView.js";
+import { getFormData } from "/helpers.js";
 
 export default class extends AbstractView {
     constructor(params) {

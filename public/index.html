@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intensio</title>
-    <link rel="icon" href="res/logo.svg" type="image/svg">
+    <link rel="icon" href="/res/logo.svg" type="image/svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Sanchez&display=swap"
         rel="stylesheet">
-    <link href="styles/shared.css" rel="stylesheet">
-    <link href="styles/index.css" rel="stylesheet">
-    <link href="styles/auth.css" rel="stylesheet">
-    <link href="styles/details.css" rel="stylesheet">
+    <link href="/styles/shared.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+    <link href="/styles/auth.css" rel="stylesheet">
+    <link href="/styles/details.css" rel="stylesheet">
 
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
@@ -32,24 +32,24 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="./app.js" type="module"></script>
+    <script src="/app.js" type="module"></script>
 </head>
 
 <body>
     <header id="mainHeader" class="header">
         <div class="container">
             <a href="/" class="logotype" data-link>
-                <img src="res/logo.svg" alt="">
+                <img src="/res/logo.svg" alt="">
                 <span>intensio</span>
             </a>
             <a id="logoutButton" class="logout" onclick="javasript:firebase.auth().signOut()">
-                <img src="res/logout.svg" alt="Log Out">
+                <img src="/res/logout.svg" alt="Log Out">
             </a>
         </div>
     </header>
 
     <main></main>
-    
+
 </body>
 <script>
     

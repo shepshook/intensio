@@ -1,6 +1,6 @@
-import AbstractView from "./AbstractView.js";
-import { getProject } from "../data/Repository.js";
-import { formatMillis } from "../helpers.js";
+import AbstractView from "/views/AbstractView.js";
+import { getProject } from "/data/Repository.js";
+import { formatMillis } from "/helpers.js";
 
 export default class extends AbstractView {
     constructor(params) {

@@ -1,6 +1,6 @@
-import Home from "./views/Home.js";
-import Project from "./views/Project.js";
-import Auth from "./views/Auth.js";
+import Home from "/views/Home.js";
+import Project from "/views/Project.js";
+import Auth from "/views/Auth.js";
 
 export let UserId;
 let currentView;
