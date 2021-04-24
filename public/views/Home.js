@@ -114,7 +114,7 @@ export default class extends AbstractView {
                 ${drawSection("This month", 30)}
                 ${drawSection("Older", null)}
             </div>
-            <div id="newProjectModal" class="modal-container">
+            <section id="newProjectModal" class="modal-container">
                 <div class="new-project-modal">
                     <div class="header">
                         <h1>Add new project</h1>
@@ -131,7 +131,7 @@ export default class extends AbstractView {
                         <button type="submit" class="save-button">Save</button>
                     </form>
                 </div>
-            </div>
+            </section>
         `;
     }
 }
