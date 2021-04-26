@@ -1,0 +1,180 @@
+section.archive > h1 {
+    margin: 1em 0 0 1em;
+}
+
+.project-card {
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    padding: 0.7em 1em;
+    background-color: #FAFAFA;
+    color: black;
+    border: #DCDCDC solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card a:hover {
+    color: #583881;
+}
+
+.project-card > div {
+    display: flex;
+    align-items: center;
+}
+
+.project-card > div:last-of-type {
+    margin-left: auto;
+}
+
+.project-card time {
+    margin-right: 0.7em;
+    font-size: 1.4em;
+}
+
+.project-card button {
+    font-size: inherit;
+    background: none;
+    outline: none;
+    padding: 0;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.project-card button img {
+    width: 3em;
+    height: 3em;
+}
+
+.project-card button:hover {
+    filter: brightness(1.2);
+}
+
+.project-card button:focus {
+    filter: drop-shadow(0 0 3px #583881);
+}
+
+.project-card.current-project {
+    border: none;
+    background-color: #583881;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.project-card.current-project h1 {
+    font-size: 2em;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.project-card.current-project button:hover {
+    filter: brightness(0.95);
+}
+
+.project-card.current-project button:focus {
+    filter: drop-shadow(0 0 3px #FFB9B9);
+}
+
+.project-card.current-project a:hover {
+    color: #dfcafa;
+}
+
+span.color-dot {
+    background-color: aquamarine;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.7em;
+}
+
+button.new-project-button {
+    display: flex;
+    background: none;
+    outline: none;
+    margin: auto;
+    align-items: center;
+    font-size: 1.5em;
+    color: #909090;
+}
+
+button.new-project-button * {
+    margin: 0 0.4em;
+}
+
+button.new-project-button:hover, button.new-project-button:focus {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-project-modal {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 1.5em;
+    width: 30em; 
+}
+
+.new-project-modal > .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em;
+}
+
+button.close > img {
+    height: 1em;
+    width: auto;
+}
+
+.new-project-modal > .body {
+    padding: 1em;
+}
+
+.new-project-modal .form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.new-project-modal > .body label {
+    margin: auto 0 auto auto;
+}
+
+.new-project-modal .color-input {
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+button.save-button {
+    color: white;
+    background-color: #583881;
+    padding-right: 2em;
+    padding-left: 2em;  
+    display: flex;
+    margin: 0 auto;
+}
+
+button.save-button:hover {
+    background-color: #482e69;
+}

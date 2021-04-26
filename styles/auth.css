@@ -1,0 +1,103 @@
+.landing-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: 
+        url(../res/main-art.svg) 300px 250px no-repeat,
+        url(../res/logo-background.svg) left top no-repeat;
+    background-size: auto 500px, auto 1000px;
+    height: 100vh;
+    padding: 4em 12em 0 8em;
+}
+
+.landing-logotype {
+    text-decoration: none;
+    display: flex;
+    margin: 0 3em 4em 0;
+}
+
+.landing-logotype:active {
+    text-decoration: none;
+}
+
+.landing-logotype img {
+    margin-right: 1em;
+}
+
+.landing-logotype h1 {
+    font-family: 'Sanchez', serif !important;
+    color: black;
+    margin: 1rem 0 0;
+    font-size: 4rem;
+}
+
+.landing-logotype span {
+    color: #a1a1a1;
+    letter-spacing: 0.15em;
+    font-size: 1.5rem;
+}
+
+.landing-page main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    margin: 0;
+}
+
+.login-form-title {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2rem;
+}
+
+.login-form-title span {
+    font-family: 'Sanchez', serif !important;
+}
+
+.login-form {
+    width: 22em;
+}
+
+.login-form * {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.login-form input {
+    margin: 0.5em 0;
+}
+
+.login-form input:last-of-type {
+    margin-bottom: 1.5em;
+}
+
+.login-form button {
+    margin: 0.3em 0;
+}
+
+button.sign-up-button {
+    color: white;
+    background-color: #583881;
+}
+
+button.sign-up-button:hover {
+    background-color: #482e69;
+}
+
+@media only screen and (max-width: 70em) {
+    .landing-page {
+        background: url(../res/logo-background.svg) center top no-repeat;
+        background-size: auto;
+        padding: 2em 1.5em;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+}
