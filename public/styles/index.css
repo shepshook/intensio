@@ -2,6 +2,10 @@ section.archive > h1 {
     margin: 1em 0 0 1em;
 }
 
+main > div.container {
+    flex-direction: column;
+}
+
 .project-card {
     font-size: 0.8rem;
     border-radius: 1.5rem;
@@ -47,7 +51,8 @@ section.archive > h1 {
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.project-card button img {
+.project-card button {
+    background: center/contain no-repeat url(../res/start.svg);
     width: 3em;
     height: 3em;
 }
@@ -73,6 +78,10 @@ section.archive > h1 {
     margin-bottom: 0.5em;
 }
 
+.project-card.current-project button {
+    background: center/contain no-repeat url(../res/stop.svg);
+}
+
 .project-card.current-project button:hover {
     filter: brightness(0.95);
 }
@@ -86,7 +95,6 @@ section.archive > h1 {
 }
 
 span.color-dot {
-    background-color: aquamarine;
     width: 1.5em;
     height: 1.5em;
     border-radius: 50%;
@@ -125,8 +133,8 @@ button.new-project-button:hover, button.new-project-button:focus {
 
 .new-project-modal {
     background-color: #fefefe;
-    border: 1px solid #888;
-    border-radius: 1.5em;
+    border: 1px solid black;
+    border-radius: 0.5em;
     width: 30em; 
 }
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intensio</title>
+    <link rel="icon" href="/res/logo.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Sanchez&display=swap"
+        rel="stylesheet">
+    <link href="/styles/shared.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+    <link href="/styles/auth.css" rel="stylesheet">
+    <link href="/styles/details.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAjtismB2O3Av2huDYMbWvnCF5sPzBtJH8",
+            authDomain: "intensio0.firebaseapp.com",
+            projectId: "intensio0",
+            databaseURL: "https://intensio0-default-rtdb.europe-west1.firebasedatabase.app/",
+            storageBucket: "intensio0.appspot.com",
+            messagingSenderId: "206782710783",
+            appId: "1:206782710783:web:42f9e2e6b924ae5ece5dca"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="/app.js" type="module"></script>
+</head>
+
+<body>
+    <header id="mainHeader" class="header">
+        <div class="container">
+            <a href="/" class="logotype" data-link>
+                <img src="/res/logo.svg" alt="">
+                <span>intensio</span>
+            </a>
+            <a id="logoutButton" class="logout" onclick="javasript:firebase.auth().signOut()">
+                <img src="/res/logout.svg" alt="Log Out">
+            </a>
+        </div>
+    </header>
+
+    <main></main>
+
+</body>
+<script>
+    
+</script>
+
+</html>
