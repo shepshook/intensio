@@ -61,7 +61,8 @@ header.header .logout > img {
 }
 
 header.header .logout:hover {
-    filter: contrast(0.2)
+    filter: contrast(0.2);
+    cursor: pointer;
 }
 
 .container {
