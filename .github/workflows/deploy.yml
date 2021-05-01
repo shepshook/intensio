@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - milestone/final
 
 jobs:
   deploy:
